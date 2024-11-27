@@ -59,11 +59,11 @@ async function weatherFn(cName) {
 
 function setBackground(temperature) {
   const body = document.body;
-  if (temperature < 4) {
+  if (temperature < 3) {
     body.style.backgroundImage = "url('cold temperature.webp')";
-  } else if (temperature >= 4 && temperature < 10) {
+  } else if (temperature >= 3 && temperature < 13) {
     body.style.backgroundImage = "url('herbst.webp')";
-  } else if (temperature >= 10 && temperature < 20) {
+  } else if (temperature >= 13 && temperature < 22) {
     body.style.backgroundImage = "url('warm temperature.webp')";
   } else {
     body.style.backgroundImage = "url('sun.webp')";
